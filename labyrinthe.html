@@ -647,7 +647,23 @@
         </a-entity>
 
       </a-scene>
+      
+      <script>
+        let tab = ["blue","red","yellow","orange","pink","green"];
+        let couleurRandom;
 
+        // NOTE : Math.floor(Math.random() * max) = randint(max) en python (i miss python)
+
+        var plane = document.querySelectorAll('a-entity');
+
+        // mini code qui assigne des couleurs a chaque mur aléatoirement
+        plane.forEach(function(plane) {
+
+          let couleurRandom = tab[Math.floor(Math.random()*tab.length)]
+
+            plane.setAttribute(`material`, `side: double; src:#foret; color:${couleurRandom}`);
+        });
+
+      </script>
     </body>
-
 </html>
