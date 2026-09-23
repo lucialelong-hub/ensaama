@@ -1,0 +1,193 @@
+<html>
+
+  <head>
+    <script src="https://aframe.io/releases/1.8.0/aframe.min.js"></script>
+  </head>
+
+    <body>
+      <a-scene>
+        
+        <a-assets>
+          <img id="foret" src="./images/foret.png">
+          <img id="ciel" src="./images/ciel.png">
+          <img id="herbe" src="./images/herbe.jpg">
+        </a-assets>
+
+
+        <!-- les murs qui entourent le labyrinthe -->
+
+        <!-- MUR 1 parallèle -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1.5 0.6 -1.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1 0.6 -1.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-0.5 0.6 -1.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="0 0.6 -1.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="0.5 0.6 -1.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="1 0.6 -1.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="1.5 0.6 -1.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="2 0.6 -1.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+
+        <!-- MUR 2 parallèle -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1.5 0.6 -5.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1 0.6 -5.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-0.5 0.6 -5.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="0 0.6 -5.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="0.5 0.6 -5.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="1 0.6 -5.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="1.5 0.6 -5.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="2 0.6 -5.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+
+        <!-- MUR 1 perpendiculaire -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1.75 0.6 -1.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1.75 0.6 -2.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1.75 0.6 -2.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1.75 0.6 -3.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1.75 0.6 -3.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1.75 0.6 -4.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1.75 0.6 -4.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1.75 0.6 -5.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+
+        <!-- MUR 2 perpendiculaire -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="2.25 0.6 -1.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="2.25 0.6 -2.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="2.25 0.6 -2.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="2.25 0.6 -3.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <!-- sortie (pas de mur) -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="2.25 0.6 -4.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="2.25 0.6 -4.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="2.25 0.6 -5.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        
+        <!-- les murs à l'intérieur du labyrinthe -->
+
+        <!-- ligne 1 -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="0.25 0.6 -1.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="1.25 0.6 -1.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+
+        <!-- ligne 2 -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-0.5 0.6 -2" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+
+        <!-- ligne 3 -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1.25 0.6 -2.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-0.75 0.6 -2.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="0.25 0.6 -2.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="0.75 0.6 -2.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="1.25 0.6 -2.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="1.75 0.6 -2.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="2.25 0.6 -2.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+
+        <!-- ligne 4 -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="0 0.6 -2.50" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="1.5 0.6 -2.50" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+
+        <!-- ligne 5 -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1.25 0.6 -2.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-0.75 0.6 -2.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="0.75 0.6 -2.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+
+        <!-- ligne 6 -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1.5 0.6 -3" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-0.5 0.6 -3" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="0.5 0.6 -3" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="1 0.6 -3" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="1.5 0.6 -3" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50"  position="2 0.6 -3" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+
+        <!-- ligne 7 -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1.25 0.6 -3.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-0.25 0.6 -3.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="1.25 0.6 -3.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+
+        <!-- ligne 8 -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1 0.6 -3.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="0.5 0.6 -3.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+
+        <!-- ligne 9 -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1.25 0.6 -3.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-0.25 0.6 -3.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="0.75 0.6 -3.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="1.25 0.6 -3.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="1.75 0.6 -3.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+
+        <!-- ligne 10 -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="0 0.6 -4" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="0.5 0.6 -4" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="2 0.6 -4" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+
+        <!-- ligne 11 -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1.25 0.6 -4.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-0.75 0.6 -4.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="1.25 0.6 -4.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+
+        <!-- ligne 12 -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="0 0.6 -4.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="0.5 0.6 -4.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="1 0.6 -4.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="1.5 0.6 -4.5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+
+        <!-- ligne 13 -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-1.25 0.6 -4.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-0.75 0.6 -4.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-0.25 0.6 -4.75" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+
+        <!-- ligne 15 -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="0.5 0.6 -5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="1 0.6 -5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="1.5 0.6 -5" rotation="0 0 0" material="side: double; src:#foret"> </a-entity>
+
+        <!-- ligne 16 -->
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="-0.75 0.6 -5.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+        <a-entity geometry="primitive: plane; height: 1.2; width: 0.50" position="0.25 0.6 -5.25" rotation="0 90 0" material="side: double; src:#foret"> </a-entity>
+
+        <!-- sol -->
+        <a-plane 
+          position="0.25 0 -3.5" 
+          rotation="-90 0 0" 
+          width="4" height="4"
+          material=src:#herbe>
+        </a-plane>
+
+        <!-- plafond -->
+        <a-plane 
+          position="0.25 1.2 -3.5" 
+          rotation="90 0 0" 
+          width="4" height="4"
+          material=src:#ciel>
+        </a-plane>
+
+        <a-sky 
+          color="black">
+        </a-sky>
+
+        <a-entity 
+          camera="active: true" 
+          look-controls wasd-controls="acceleration: 7" 
+          position="0.50 0.7 -1.75">
+        </a-entity>
+
+      </a-scene>
+
+
+      <script>
+
+        let tab = ["blue","red","yellow","orange","pink","green"];
+        let couleurRandom;
+
+        // NOTE : Math.floor(Math.random() * max) = randint(max) en python (i miss python)
+
+        var plane = document.querySelectorAll('a-entity');
+
+        // mini code qui assigne des couleurs a chaque mur aléatoirement
+        plane.forEach(function(plane) {
+
+          let couleurRandom = tab[Math.floor(Math.random()*tab.length)]
+
+            plane.setAttribute(`material`, `side: double; src:#foret; color:${couleurRandom}`);
+        });
+
+      </script>
+        
+        
+
+
+    </body>
+
+</html>
